@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+.dog-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+img {
+  max-width: 600px;
+}
+
+.button-container {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.subheader {
+  font-weight: 500;
+}
+
+p {
+  text-align: left;
+}
+
+.mat-expansion-panel-header-description {
+  flex-direction: row-reverse;
+}
+
+.mat-icon {
+  margin-right: 0.5rem;
+}
+
+.back-button-container {
+  text-align: right;
+}

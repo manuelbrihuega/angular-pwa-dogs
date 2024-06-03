@@ -1,0 +1,20 @@
+<div class="dogs-container">
+  <h1>List of puppies</h1>
+  <div class="button-container">
+    <button [ngClass]="{'active': showTable}" mat-fab [disabled]="!showTable" color="accent" aria-label="Ver en modo tarjetas" (click)="toggleShowTable()">
+      <mat-icon>grid_view</mat-icon>
+    </button>
+    <button [ngClass]="{'active': !showTable}" class="active" mat-fab [disabled]="showTable" color="accent" aria-label="Ver en modo tabla" (click)="toggleShowTable()">
+      <mat-icon>format_list_bulleted</mat-icon>
+    </button>
+  </div>
+  <div *ngIf="showCards" class="card-container" [@fadeInOutProgressive]>
+    <app-card *ngFor="let dog of dogs" [identificador]="dog.id" [titulo]="dog.name" [subtitulo]="dog.breed_group" [texto]="dog.temperament"></app-card>
+  </div>
+  <div *ngIf="showTable" class="table-container" [@fadeInOutProgressive]>
+    <app-grid [elementos]="elementos"></app-grid>
+  </div>
+</div>
+<div class="spinner-layer" *ngIf="showLoading">
+  <mat-spinner></mat-spinner>
+</div>
