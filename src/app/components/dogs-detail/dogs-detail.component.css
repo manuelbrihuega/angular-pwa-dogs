@@ -18,6 +18,8 @@ img {
 .button-container {
   text-align: right;
   margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .subheader {
@@ -38,4 +40,22 @@ p {
 
 .back-button-container {
   text-align: right;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.expansion-panel-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  img {
+    max-width: 100%;
+  }
+
+  .mat-expansion-panel-header-description {
+    display: none;
+  }
 }

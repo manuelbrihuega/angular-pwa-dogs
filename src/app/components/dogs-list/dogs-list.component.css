@@ -10,9 +10,20 @@ h1 {
 }
 
 .button-container {
-  width: 100%;
   text-align: right;
   margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.card-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.table-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 button {
